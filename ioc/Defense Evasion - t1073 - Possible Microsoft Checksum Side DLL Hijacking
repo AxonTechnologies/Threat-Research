@@ -1,0 +1,17 @@
+ {
+      "title": "Defense Evasion - t1073 - Possible Microsoft Checksum Side DLL Hijacking",
+      "timestamp": 1563173276,
+      "iocs": {
+        "query": [
+          {
+            "index_type": "events",
+            "search_query": "cb.urlver=1&q=(process_name:fciv.exe AND (childproc_name:rundll32.exe OR childproc_name:cmd.exe OR childproc_name:powershell.exe) AND (modload:CRYPTSP.dll OR modload:USERENV.dll))"
+          }
+        ]
+      },
+      "score": 80,
+      "link": "https://attack.mitre.org/techniques/T1073/",
+      "id": "Defense Evasion - t1073 - Possible Microsoft Checksum Side DLL Hijacking"
+    }
+    
+    
