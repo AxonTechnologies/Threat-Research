@@ -1,0 +1,15 @@
+ {
+      "title": "Command Execution - Possible Powershell Reverse Shell", 
+      "timestamp": 1563173276, 
+      "iocs": {
+        "query": [
+          {
+            "index_type": "events",
+            "search_query": "cb.urlver=1&q=(process_name:powershell.exe AND netconn_count:[1 TO *] and *ReceiveBufferSize)"
+          }
+        ]
+      }, 
+      "score": 80, 
+      "link": "https://attack.mitre.org/techniques/T1202/",
+      "id": "Command Execution - Powershell reverse shell"
+    }, 
