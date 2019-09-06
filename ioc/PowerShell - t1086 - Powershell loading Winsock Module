@@ -1,0 +1,15 @@
+  { 
+     "title": "PowerShell - t1086 - Powershell loading Winsock Module",
+     "timestamp":1563173276,
+     "iocs":{
+      "query": [
+       {
+       "index_type":"events",
+       "search_query":"cb.urlver=1&q=(process_name:powershell.exe AND modload:WS2_32.dll AND netconn_count:[1 TO *]) "
+       }
+     ]
+    },
+    "score":80,
+    "link":"https://attack.mitre.org/techniques/T1086/",
+    "id":"PowerShell - t1086 - Powershell loading Winsock Module"
+    },
