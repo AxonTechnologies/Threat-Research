@@ -1,0 +1,75 @@
+{
+     "title": "CertUtil - S0160 - Encoding Binary Technique",
+     "timestamp":1566808591,
+     "iocs":{
+      "query": [
+       {
+       "index_type":"events",
+       "search_query":"cb.urlver=1&q=(process_name:certutil.exe AND cmdline:-f AND cmdline:-encode AND cmdline:.exe ) "
+       }
+     ]
+    },
+    "score":60,
+    "link":"https://attack.mitre.org/software/S0160/",
+    "id":"CertUtil - S0160 - Encoding Binary Technique"
+    },
+      {
+     "title": "CertUtil - S0160 - Decoding Binary Technique",
+     "timestamp":1566808591,
+     "iocs":{
+      "query": [
+       {
+       "index_type":"events",
+       "search_query":"cb.urlver=1&q=(process_name:certutil.exe AND cmdline:-f AND cmdline:-decode AND cmdline:.exe ) "
+       }
+     ]
+    },
+    "score":60,
+    "link":"https://attack.mitre.org/software/S0160/",
+    "id":"CertUtil - S0160 - Decoding Binary Technique"
+    },
+     {
+     "title": "CertUtil - S0160 - Possible Downloading Encoded Script Technique",
+     "timestamp":1566808591,
+     "iocs":{
+      "query": [
+       {
+       "index_type":"events",
+       "search_query":"cb.urlver=1&q=(process_name:certutil.exe AND cmdline:-urlcache AND cmdline:-split  ) "
+       }
+     ]
+    },
+    "score":60,
+    "link":"https://attack.mitre.org/software/S0160/",
+    "id":"CertUtil - S0160 - Possible Downloading Encoded Script Technique"
+    },
+      {
+     "title": "CertUtil - S0160 - HEX Encoding Binary Technique",
+     "timestamp":1566808591,
+     "iocs":{
+      "query": [
+       {
+       "index_type":"events",
+       "search_query":"cb.urlver=1&q=(process_name:certutil.exe AND cmdline:-f AND cmdline:-encodehex AND cmdline:.exe ) "
+       }
+     ]
+    },
+    "score":60,
+    "link":"https://attack.mitre.org/software/S0160/",
+    "id":"CertUtil - S0160 - Hex Encoding Binary Technique"
+    },
+      {
+     "title": "CertUtil - S0160 - HEX Decoding Binary Technique",
+     "timestamp":1566808591,
+     "iocs":{
+      "query": [
+       {
+       "index_type":"events",
+       "search_query":"cb.urlver=1&q=(process_name:certutil.exe AND cmdline:-f AND cmdline:-decodehex AND cmdline:.exe ) "
+       }
+     ]
+    },
+    "score":60,
+    "link":"https://attack.mitre.org/software/S0160/",
+    "id":"CertUtil - S0160 - Hex Decoding Binary Technique"
+    },
