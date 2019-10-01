@@ -1,0 +1,6 @@
+cb.urlver=1&q=(process_name:regasm.exe AND modload:mswsock.dll) 
+cb.urlver=1&q=(process_name:regasm.exe AND cmdline:.dll )
+cb.urlver=1&q=(process_name :regasm.exe AND cmdline:/U )
+cb.urlver=1&q=(process_name:regsvcs.exe AND modload:mswsock.dll) 
+cb.urlver=1&q=(process_name:regsvcs.exe AND cmdline:.dll) 
+cb.urlver=1&q=(process_name :regsvcs.exe AND cmdline:/U )
